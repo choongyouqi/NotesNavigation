@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        return navigateUp(drawerLayout, findNavController(this, R.id.nav_host_fragment))
+        return navigateUp(findNavController(this, R.id.nav_host_fragment), drawerLayout)
     }
 
     override fun onBackPressed() {
